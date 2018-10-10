@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace File_Reading_Demo
 {
@@ -26,7 +23,8 @@ namespace File_Reading_Demo
         {
             try
             {
-                string dataFile = "../../../../File Writing Demo/File Writing Demo/bin/Debug/accounts.txt";
+                // string dataFile = "../../../../CIS209-File_Writing_Demo/File Writing Demo/bin/Debug/accounts.txt";
+                string dataFile = "..\\..\\..\\..\\CIS209-File_Writing_Demo\\File Writing Demo\\bin\\Debug\\accounts.txt";
                 StreamReader inputFile = File.OpenText(dataFile);
 
                 while (!inputFile.EndOfStream)
